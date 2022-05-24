@@ -8,24 +8,40 @@
   <title>Code Quiz</title>
 </head>
 <body>
-  <header>
-    <a href="#scores"><h3>View High Scores</h3></a>
-    <h2>Time:</h2>
-  </header>
-  <section class="quiz-window">
-    <div class="title">
+  <section class="main">
+    <header>
+      <a href="highscore.html">
+        <h3>View Highscores</h3>
+      </a>
+        
+      <h2 id="timeDisplay">Time: <span id="timer">0</span></h2>
+    </header>
+    <div class="quiz-window" id="theContent">
       <h1>Coding Quiz Challenge</h1>
-      <h3>Try to answer the following coding-related quiz questions
-          within the time limit.  Keep in mind that incorrect answers
-          will penalize your score/time by 10 seconds.
-      </h3>
-      <button class="button" id="start">Start Quiz</button>
+      <h2 id="question" class="quiz"></h2>
+      <div class="quiz">
+          <br class="quiz">
+          <br class="quiz">
+          <button type="button" onclick="answerCheck(this.id)" id="answer1" class="quiz btn btn-danger"></button>
+          <br class="quiz">
+          <button type="button" onclick="answerCheck(this.id)" id="answer2" class="quiz btn btn-danger"></button>
+          <br class="quiz">
+          <button type="button" onclick="answerCheck(this.id)" id="answer3" class="quiz btn btn-danger"></button>
+          <br class="quiz">
+          <button type="button" onclick="answerCheck(this.id)" id="answer4" class="quiz btn btn-danger"></button>
+          <br class="quiz">
+          <button type="button" onclick="answerCheck(this.id)" id="answer5" class="quiz btn btn-danger"></button>
+          <br>
+          <hr>
+          <h3 id="feedback"></h3>
+      </div>
+      <h3>Try to answer the following code-related questions within the time limit. Keep in mind
+          that incorrect answers will penalize your score/time by ten seconds.</h3>
+          <button id="startBtn" type="button" onclick="quizStart();" class="button">Start Quiz</button>
+
     </div>
   </section>
-
-  <section class="questions-window">
-
-  </section>
-  
+        <script src="assets/js/questions.js"></script>
+        <script src="assets/js/index.js"></script>
 </body>
 </html>

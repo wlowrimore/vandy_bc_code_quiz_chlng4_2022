@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>High Scores</title>
+</head>
+<body>
+  <div>
+		<div>
+			<div></div>
+			<div class="content">
+				<h1 class="highscores">Highscores</h1>
+				<table class="table table-striped">
+					<tbody id="tableBody">
+						<tr class="scores"></tr>
+					</tbody>
+				</table>
+				<div class="row">
+					<button type="button" onclick="window.location='index.html';" id="homeBtn" class="btn btn-danger">Go Back</button>
+					<button type="button" onclick="clearStorage();" href="highscore.html" id="clearBtn" class="btn btn-danger">Clear Highscores</button>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</div>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>
