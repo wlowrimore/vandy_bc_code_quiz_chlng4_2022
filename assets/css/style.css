@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Impact;
+  font-weight: 100;
+}
+
+/* ________________________HEADER______________________ */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  margin: 0;
+  background: bisque;
+  letter-spacing: 1px;
+}
+
+header > a {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  color: slategray;
+  text-decoration-line: none;
+}
+
+header a:hover {
+  color: powderblue;
+  margin: 0;
+  padding: 0;
+}
+
+header h2 {
+  padding: 18px 0 0 0;
+  font-size: 30px;
+}
+
+/* _________________________QUIZ WINDOW_________________________ */
+
+.quiz-window {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 50px;
+  justify-content: center;
+  align-items: center;
+  background: bisque;
+}
+
+.title {
+  display: block;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.title h3 {
+  max-width: 550px;
+  text-align: center;
+  padding-bottom: 26px;
+  font-size: 28px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.button {
+  width: 8rem;
+  padding: 4px 0px;
+  font-size: 24px;
+  color: whitesmoke;
+  background: slategray;
+  border: 1px solid slategray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: powderblue;
+  color: #000;
+}
