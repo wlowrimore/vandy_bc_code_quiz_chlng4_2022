@@ -7,7 +7,7 @@ let questionsArray = [
   {
     title: "The condition in an if / else statement is enclosed within _____.",
     choices: ["quotes", "curly brackets", "square brackets", "parentheses"],
-    answer: "parntheses",
+    answer: "parentheses",
   },
   {
     title: "Arrays in JavaScript can be used to store_____",
@@ -15,15 +15,15 @@ let questionsArray = [
       "numbers and strings",
       "booleans",
       "other arrays",
-      "all of the above.",
+      "all of the above",
     ],
-    answer: "All of the above",
+    answer: "all of the above",
   },
   {
     title:
       "String values must be enclosed within _____ when being assigned to variables.",
     choices: ["commas", "curly brackets", "quotes", "parentheses"],
-    answer: "parentheses",
+    answer: "quotes",
   },
   {
     title:

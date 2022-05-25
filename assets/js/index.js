@@ -8,7 +8,7 @@ var answerBtn3 = document.getElementById("answer3");
 var answerBtn4 = document.getElementById("answer4");
 var answerBtn5 = document.getElementById("answer5");
 var feedback = document.getElementById("feedback");
-var title = document.getElementById("pageTitle");
+var title = document.getElementById("title");
 var qNum = 0;
 var timeLeft = 0;
 var quizTime = 0;
@@ -72,16 +72,16 @@ function answerCheck(btnId) {
 }
 function rightAnswer() {
   score = timeLeft;
-  feedback.innerHTML = "Correct";
+  result.innerHTML = "Correct";
   setTimeout(function () {
-    feedback.innerHTML = "";
+    result.innerHTML = "";
   }, 800);
 }
 function wrongAnswer() {
   timeLeft = timeLeft - 15;
-  feedback.innerHTML = "Wrong";
+  result.innerHTML = "Wrong";
   setTimeout(function () {
-    feedback.innerHTML = "";
+    result.innerHTML = "";
   }, 800);
 }
 
@@ -97,13 +97,15 @@ function quizOver() {
 
   content.insertAdjacentHTML(
     "afterbegin",
-    '<h1 id="done">All Done!</h1> <button id="submit" class="btn btn-danger">Submit</button> <input id="userScore"> - Enter Initials</input>'
+    '<h1 id="done">All Done!</h1> <input class="user-intl" placeholder="Enter Initials" id="userScore"><button id="submit" class="score-submit">Submit</button></input>'
   );
 
   var done = document.getElementById("done");
   done.insertAdjacentHTML(
     "afterend",
-    '<p id="finalScore">Your final score is ' + score + "</p>"
+    '<p class="final-score" id="finalScore">Your final score is ' +
+      score +
+      "</p>"
   );
 
   var submit = document.getElementById("submit");
