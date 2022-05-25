@@ -16,6 +16,7 @@ h5,
 h6 {
   font-family: Impact;
   font-weight: 100;
+  letter-spacing: 2px;
 }
 
 /* .main {
@@ -201,6 +202,39 @@ hr {
   background: slategray;
 }
 
+.quiz-button {
+margin-left: 44.5%;
+width: 10%;
+font-size: 18px;
+color: whitesmoke;
+letter-spacing: 1px;
+background: slategray;
+border: 1px solid slategray;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.quiz-button:hover {
+  background: powderblue;
+  color: #000;
+}
+
+.hs-button {
+  font-size: 20px;
+  color: whitesmoke;
+  letter-spacing: 1px;
+  padding: 4px 4px;
+  background: slategray;
+  border: 1px solid slategray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hs-button:hover {
+  background: powderblue;
+  color: #000;
+}
+
 /* .questions {
   display: flex;
   flex-direction: column;
@@ -210,13 +244,10 @@ hr {
 
 .left {
 text-align: left;
+line-height: 2;
 padding-bottom: 4px;
 }
 
-.quiz-button {
-margin-left: 40%;
-font-size: 18px;
-}
 
 .quiz {
   display: none;
