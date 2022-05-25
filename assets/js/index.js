@@ -9,15 +9,18 @@ var answerBtn4 = document.getElementById("answer4");
 var answerBtn5 = document.getElementById("answer5");
 var feedback = document.getElementById("feedback");
 var title = document.getElementById("title");
+
 var qNum = 0;
 var timeLeft = 0;
 var quizTime = 0;
 var score = 0;
 
+// checks if any highscores exist. If so it renders them to highscores page
 if (title.innerHTML === "Highscores") {
   renderTable();
 }
 
+// starts quiz by putting 75 seconds on timer to begin counting down and begins questions loop
 function quizStart() {
   timeLeft = 75;
   startTimer();
@@ -75,16 +78,18 @@ function rightAnswer() {
   result.innerHTML = "Correct";
   setTimeout(function () {
     result.innerHTML = "";
-  }, 800);
+  }, 1000);
 }
 function wrongAnswer() {
-  timeLeft = timeLeft - 15;
+  timeLeft = timeLeft - 10;
   result.innerHTML = "Wrong";
   setTimeout(function () {
     result.innerHTML = "";
-  }, 800);
+  }, 1000);
 }
 
+// when quiz is over the final score is rendered and user can enter their initials. Upon clicking "submit", the users score and initals are
+// sent to local storage where they are stored for retrieval when accessed throught the "view highscores" link in main page header.
 function quizOver() {
   document.querySelectorAll(".quiz").forEach((quiz) => {
     quiz.style.display = "none";
@@ -97,7 +102,7 @@ function quizOver() {
 
   content.insertAdjacentHTML(
     "afterbegin",
-    '<h1 id="done">All Done!</h1> <input class="user-intl" placeholder="Enter Initials" id="userScore"><button id="submit" class="score-submit">Submit</button></input>'
+    '<h1 id="done">All Done!</h1> <input placeholder="Enter Initials" id="userScore"><button id="submit" class="score-submit">Submit</button></input>'
   );
 
   var done = document.getElementById("done");
@@ -117,6 +122,7 @@ function quizOver() {
   clearInterval(quizTime);
 }
 
+// pulls in highscores/user initials from local storage
 function renderTable() {
   var tbody = document.getElementById("tableBody");
   for (let i = 0; i < localStorage.length; i++) {
@@ -128,6 +134,8 @@ function renderTable() {
     );
   }
 }
+
+// when the "clear highscores" button is clicked this function fires to clear local storage
 function clearStorage() {
   localStorage.clear();
   window.location.reload();

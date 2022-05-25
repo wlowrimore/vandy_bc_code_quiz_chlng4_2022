@@ -10,37 +10,40 @@
 <body>
   <div>
     <header>
-        <a class="highscore" href="highscore.html">
-            <h3>View Highscores</h3>
-        </a>
-        <div class="col-9"></div>
-        <h3 id="timeDisplay" class="col-1">Time: <span id="timer">0</span></h3>
+      <a class="highscore" href="highscore.html">
+          <h3>View Highscores</h3>
+      </a>
+      <div></div>
+      <h3 id="timeDisplay">Time: <span id="timer">0</span></h3>
     </header>
-    <div class="content" id="theContent">
 
-        <h1 class="sub-cont title main">Coding Quiz Challenge</h1>
-        <h2 id="question" class="quiz"></h2>
-        <div class="left">
-            <br class="quiz">
-            <br class="quiz">
-            <button type="button" onclick="answerCheck(this.id)" id="answer1" class="quiz quiz-button"></button>
-            <br class="quiz">
-            <button type="button" onclick="answerCheck(this.id)" id="answer2" class="quiz quiz-button"></button>
-            <br class="quiz">
-            <button type="button" onclick="answerCheck(this.id)" id="answer3" class="quiz quiz-button"></button>
-            <br class="quiz">
-            <button type="button" onclick="answerCheck(this.id)" id="answer4" class="quiz quiz-button"></button>
-            <br>
-            <hr>
-            <h3 id="result"></h3>
-        </div>
-        <h3 class="sub-cont main">Try to answer the following code-related questions within the time limit. Keep in mind
-            that incorrect answers will penalize your score/time by ten seconds!</p>
-            <br>
-            <button id="startBtn" type="button" onclick="quizStart();" class="start-button">Start Quiz</button>
+    <div class="content" id="theContent">
+      <h1 class="sub-cont title main">Coding Quiz Challenge</h1>
+      <h2 id="question" class="quiz"></h2>
+      <div class="left">
+          <br class="quiz">
+          <br class="quiz">
+          <button type="button" onclick="answerCheck(this.id)" id="answer1" class="quiz quiz-button"></button>
+          <br class="quiz">
+          <button type="button" onclick="answerCheck(this.id)" id="answer2" class="quiz quiz-button"></button>
+          <br class="quiz">
+          <button type="button" onclick="answerCheck(this.id)" id="answer3" class="quiz quiz-button"></button>
+          <br class="quiz">
+          <button type="button" onclick="answerCheck(this.id)" id="answer4" class="quiz quiz-button"></button>
+          <br>
+          <hr>
+          <h3 id="result"></h3>
+      </div>
+
+      <h3 class="sub-cont main">Try to answer the following code-related questions within the time limit. Keep in mind
+          that incorrect answers will penalize your score/time by ten seconds!</p>
+          <br>
+      <button id="startBtn" type="button" onclick="quizStart();" class="start-button">Start Quiz</button>
     </div>
-</div>
-        <script src="assets/js/questions.js"></script>
-        <script src="assets/js/index.js"></script>
+  </div>
+  
+  <script src="assets/js/questions.js"></script>
+  <script src="assets/js/index.js"></script>
+  
 </body>
 </html>
