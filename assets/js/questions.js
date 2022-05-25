@@ -1,7 +1,7 @@
 let questionsArray = [
   {
     title: "Commonly used data types DO NOT include:",
-    choices: ["strings", "booleans", "alertts", "numbers"],
+    choices: ["strings", "booleans", "alerts", "numbers"],
     answer: "alerts",
   },
   {

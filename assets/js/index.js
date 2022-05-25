@@ -55,6 +55,7 @@ function quiz() {
     answerBtn2.innerHTML = questionsArray[qNum].choices[1];
     answerBtn3.innerHTML = questionsArray[qNum].choices[2];
     answerBtn4.innerHTML = questionsArray[qNum].choices[3];
+    answerBtn5.innerHTML = questionsArray[qNum].choices[4];
   }
 }
 function answerCheck(btnId) {
